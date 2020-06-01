@@ -47,6 +47,7 @@ const Register = props => {
                 <input type="text"
                     name="username"
                     onChange={onChange}
+                    value={user.username}
                     className="form-control"
                     placeholder="Enter username.." />
 
@@ -54,12 +55,14 @@ const Register = props => {
                 <input type="password"
                     name="password"
                     onChange={onChange}
+                    value={user.password}
                     className="form-control"
                     placeholder="Enter password.." />
                 <label htmlFor="role" className="sr-only">Role: </label>
                 <input type="text"
                     name="role"
                     onChange={onChange}
+                    value={user.role}
                     className="form-control"
                     placeholder="Enter Role (admin/user)" />        
                 <button className="btn-lg btn-primary btn-block" type="submit">Register</button>
